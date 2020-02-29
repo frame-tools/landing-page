@@ -2,22 +2,26 @@
 
 body {
   background-color: #000;
-  color: #f1f1f1;
+  color: #f0f0f0;
   font-family: Montserrat;
 }
 
+.particles {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .container {
+  @extend .particles;
   background-image: url('/assets/images/logo_icon.png');
   background-size: auto 400px;
   background-position: center center;
   background-repeat: no-repeat;
-  bottom: 0;
   display: grid;
-  left: 0;
   place-items: center;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .soon {

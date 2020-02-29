@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     watch: ['src/**/*.{scss,sass}']
   })
 
-  eleventyConfig.addPassthroughCopy("src/**/*.(png|jpg|css)")
+  eleventyConfig.addPassthroughCopy("src/assets/**/!(*.scss)")
 
   // date filter (localized)
   eleventyConfig.addFilter("date", function(date, format, locale) {

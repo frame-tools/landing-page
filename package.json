@@ -4,7 +4,10 @@
   "description": "Website for Frame Tools",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run serve",
+    "11ty": "npx @11ty/eleventy --input=./src --output=./public",
+    "build": "npm run 11ty",
+    "serve": "npm run 11ty -- --serve"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,12 @@
   },
   "homepage": "https://github.com/frame-tools/landing-page#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-sass": "^1.0.0",
+    "i18next": "^19.3.2",
+    "require-yml": "^1.4.0"
   }
 }

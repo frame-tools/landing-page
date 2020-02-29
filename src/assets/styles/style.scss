@@ -1,0 +1,30 @@
+@import 'reset';
+
+body {
+  background-color: #000;
+  color: #f1f1f1;
+  font-family: Montserrat;
+}
+
+.container {
+  background-image: url('/assets/images/logo_icon.png');
+  background-size: auto 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  display: grid;
+  left: 0;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.soon {
+  display: inline-block;
+  font-size: 46px;
+  letter-spacing: 5px;
+  padding-top: 200px;
+  text-transform: uppercase;
+  text-align: center;
+}

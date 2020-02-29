@@ -1,0 +1,22 @@
+{
+  "name": "ftools-landing",
+  "version": "1.0.0",
+  "description": "Website for Frame Tools",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frame-tools/landing-page.git"
+  },
+  "author": "Frame Tools <contato@frametools.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frame-tools/landing-page/issues"
+  },
+  "homepage": "https://github.com/frame-tools/landing-page#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

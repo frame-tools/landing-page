@@ -1,0 +1,110 @@
+.section--testimonials {
+  background-color: #f7f8f9;
+}
+
+.testimonials {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 40px 0 80px 0;
+
+  &__slide {
+    text-align: center;
+    width: 33.333%;
+    float: left;
+
+    &:hover {
+      cursor: move;
+      cursor: grab;
+    }
+  }
+
+  &__thumb {
+    padding: 0 0 20px 0;
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      padding: 10px;
+      background-color: #fff;
+      margin: auto;
+    }
+  }
+
+  &__text {
+    width: 80%;
+    margin: auto;
+
+    p {
+      padding: 0 0 40px 0;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &__source {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 0 40px 0;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+
+    a {
+      color: #2d017c;
+      display: block;
+      font-size: 14px;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__pagination {
+    width: 100%;
+    text-align: center;
+    bottom: 0 !important;
+    z-index: 999 !important;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #2d017c;
+      opacity: 0.2;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #2d017c;
+    }
+  }
+
+  &__button--prev.swiper-button-prev,
+  .swiper-container-rtl &__button--next.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23bcbcbc'%2F%3E%3C%2Fsvg%3E");
+    left: 0px;
+    right: auto;
+  }
+
+  &__button--next.swiper-button-next,
+  .swiper-container-rtl &__button--prev.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23bcbcbc'%2F%3E%3C%2Fsvg%3E");
+    right: 0px;
+    left: auto;
+  }
+
+  &__button--prev.swiper-button-prev,
+  &__button--next.swiper-button-next {
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 40px;
+    background-size: 20px 40px;
+  }
+}

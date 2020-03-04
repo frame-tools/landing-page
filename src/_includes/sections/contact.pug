@@ -1,0 +1,22 @@
+section#contact.section.section--contact
+  .section__content.section__content--fluid-width.section__content--padding
+    h2.section__title.section__title--centered Get in touch
+    .section__description.section__description--centered
+      | Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service
+    .grid.grid--contact
+      .grid__item.grid__item--form
+        .grid__form.form
+          form#ContactForm.form__container(method='post' action='index.html')
+            .form__row
+              label.form__label(for='namec') Name
+              input#namec.form__input(name='namec' type='text')
+              span.form__row-border
+            .form__row
+              label.form__label Email
+              input.form__input(name='emailc' type='text')
+              span.form__row-border
+            .form__row
+              label.form__label Message
+              textarea.form__textarea(name='message' rows='3' cols='3')
+              span.form__row-border
+            input#submitc.form__submit.btn.btn--blue-bg(type='submit' name='submit' value='SEND MESSAGE')

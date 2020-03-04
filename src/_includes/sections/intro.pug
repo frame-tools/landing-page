@@ -1,0 +1,30 @@
+section#intro.section.section--intro
+  .section__content.section__content--fluid-width.section__content--intro
+    .intro
+      .intro__content
+        .intro__title
+          strong Make your mobile app
+          .intro__title__words-animation
+            span.intro__title--word-animated.word Awesome
+            span.intro__title--word-animated.word Stronger
+            span.intro__title--word-animated.word Intuitive
+        .intro__subtitle We believe we have created the most efficient SaaS landing page for your users. 
+        .intro__description
+          | For as low as 
+          span $9.95
+          |  per user month
+        .intro__buttons.intro__buttons--left
+          a.btn.btn--blue-bg.btn--play.modal-toggle(href='index.html' data-openpopup='animation') WATCH DEMO
+          a.btn.btn--dark-bg(href='index.html') START NOW
+  .intro-animation
+    img(src='/assets/images/intro-animation.png' alt='' title='')
+  svg.svg-intro-bottom(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')
+    defs
+      lineargradient#linear(x1='0' y1='0%' x2='100%' y2='20%' spreadmethod='pad')
+        stop(offset='0%' stop-color='#4916d7')
+        stop(offset='100%' stop-color='#be94f8')
+    path(d='M50,100 L90,0 100,0 100,100 Z' fill='url(#linear)' fill-opacity='0.8')
+  svg.svg-intro-bottom-2(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')
+    path(d='M60,100 L100,0 100,0 100,100 Z' fill='#ffffff' fill-opacity='0.8')
+  svg.svg-intro-bottom-3(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')
+    path(d='M80,100 L100,50 100,100 Z' fill='#ecdfff')

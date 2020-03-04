@@ -1,0 +1,42 @@
+.section--cta {
+  background-color: #4916d7;
+  background: linear-gradient(#4916d7, #be94f8);
+  position: relative;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.section__content--cta {
+  position: relative;
+  z-index: 333;
+}
+
+svg.svg-cta-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 200px;
+  z-index: 222;
+}
+
+.section__title--cta {
+  color: #fff;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    margin: auto;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    opacity: .5;
+  }
+}
+
+.section__description--cta {
+  color: #fff;
+}

@@ -1,0 +1,253 @@
+.grid {
+  width: 100%;
+  float: left;
+  clear: both;
+
+  &__item {
+    &--padding {
+      background-color: #f7f8f9;
+    }
+
+    &--centering {
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .grid--2col & {
+      float: left;
+      margin-right: 80px;
+      margin-bottom: 80px;
+      width: calc((100% - 80px) / 2);
+    }
+
+    .grid--2col &--padding {
+      width: calc((100% - 80px - 20px * 4) / 2);
+      padding: 20px;
+    }
+
+    .grid &:last-child,
+    .grid--2col &:nth-child(2n + 2) {
+      float: right;
+      margin-right: 0px;
+    }
+
+    .grid--3col & {
+      float: left;
+      margin-right: 80px;
+      margin-bottom: 80px;
+      width: calc((100% - 80px * 2) / 3);
+    }
+
+    .grid--3col #{&}#{&}--padding {
+      width: calc((100% - 80px * 2 - 20px * 6) / 3);
+      padding: 20px;
+    }
+
+    .grid--3col &--x2 {
+      width: calc((((100% - 80px * 2) / 3) * 2) + 80px);
+    }
+
+    .grid--3col #{&}--x2#{&}--padding {
+      width: calc((((100% - 80px * 2 - 20px * 6) / 3) * 2) + 80px + 20px * 2);
+      padding: 20px;
+    }
+
+    .grid--3col &:nth-child(3n + 3) {
+      float: right;
+      margin-right: 0px;
+    }
+
+    .grid--4col & {
+      float: left;
+      margin-right: 80px;
+      margin-bottom: 80px;
+      width: calc((100% - 80px * 3) / 4);
+    }
+
+    .grid--4col #{&}#{&}--padding {
+      width: calc((100% - 80px * 3 - 20px * 8) / 4);
+      padding: 20px;
+    }
+
+    .grid--4col &--x3 {
+      width: calc((((100% - 80px * 3) / 4) * 3) + 80px * 2);
+    }
+
+    .grid--4col #{&}--x3#{&}--padding {
+      width: calc((((100% - 80px * 3 - 20px * 8) / 4) * 3) + 80px * 2 + 20px * 4);
+      padding: 20px;
+    }
+
+    .grid--4col &:nth-child(4n + 4) {
+      float: right;
+      margin-right: 0px;
+    }
+
+    .grid--5col & {
+      float: left;
+      margin-right: 80px;
+      margin-bottom: 80px;
+      width: calc((100% - 80px * 4) / 5);
+    }
+
+    .grid--5col #{&}#{&}--padding {
+      width: calc((100% - 80px * 4 - 20px * 10) / 5);
+      padding: 20px;
+    }
+
+    .grid--5col &--x2 {
+      width: calc((((100% - 80px * 4) / 5) * 2) + 80px);
+    }
+
+    .grid--5col #{&}--x2#{&}--padding {
+      width: calc((((100% - 80px * 4 - 20px * 10) / 5) * 2) + 80px + 20px * 2);
+      padding: 20px;
+    }
+
+    .grid--5col &--x3 {
+      width: calc((((100% - 80px * 4) / 5) * 3) + 80px * 2);
+    }
+
+    .grid--5col #{&}--x3#{&}--padding {
+      width: calc((((100% - 80px * 4 - 20px * 10) / 5) * 3) + 80px * 2 + 20px * 4);
+      padding: 20px;
+    }
+
+    .grid--5col &--x4 {
+      width: calc((((100% - 80px * 4) / 5) * 4) + 80px * 3);
+    }
+
+    .grid--5col #{&}--x4#{&}--padding {
+      width: calc((((100% - 80px * 4 - 20px * 10) / 5) * 4) + 80px * 3 + 20px * 6);
+      padding: 20px;
+    }
+
+    .grid--5col &:nth-child(5n + 5) {
+      float: right;
+      margin-right: 0px;
+    }
+
+    .grid--6col & {
+      float: left;
+      margin-right: 80px;
+      margin-bottom: 80px;
+      width: calc((100% - 80px * 5) / 6);
+    }
+
+    .grid--6col #{&}#{&}--padding {
+      width: calc((100% - 80px * 5 - 20px * 12) / 6);
+      padding: 20px;
+    }
+
+    .grid--6col &--x2 {
+      width: calc((((100% - 80px * 5) / 6) * 2) + 80px);
+    }
+
+    .grid--6col #{&}--x2#{&}--padding {
+      width: calc((((100% - 80px * 5 - 20px * 12) / 6) * 2) + 80px + 20px * 2);
+      padding: 20px;
+    }
+
+    .grid--6col &--x3 {
+      width: calc((((100% - 80px * 5) / 6) * 3) + 80px * 2);
+    }
+
+    .grid--6col #{&}--x3#{&}--padding {
+      width: calc((((100% - 80px * 5 - 20px * 12) / 6) * 3) + 80px * 2 + 20px * 4);
+      padding: 20px;
+    }
+
+    .grid--6col &--x4 {
+      width: calc((((100% - 80px * 5) / 6) * 4) + 80px * 3);
+    }
+
+    .grid--6col #{&}--x4#{&}--padding {
+      width: calc((((100% - 80px * 5 - 20px * 12) / 6) * 4) + 80px * 3 + 20px * 6);
+      padding: 20px;
+    }
+
+    .grid--6col &--x5 {
+      width: calc((((100% - 80px * 5) / 6) * 5) + 80px * 4);
+    }
+
+    .grid--6col #{&}--x5#{&}--padding {
+      width: calc((((100% - 80px * 5 - 20px * 12) / 6) * 5) + 80px * 4 + 20px * 8);
+      padding: 20px;
+    }
+
+    .grid--6col &:nth-child(6n + 6) {
+      float: right;
+      margin-right: 0px;
+    }
+
+    &--floated-right {
+      float: right !important;
+      margin-right: 0px !important;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 0 20px 0;
+    margin: 0px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    padding-bottom: 20px;
+    line-height: 26px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__more {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 0 0 0;
+    display: inline-block;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      list-style: none;
+      padding: 5px 0;
+      margin: 0px;
+      line-height: 22px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    &--right img {
+      float: right;
+    }
+
+    &--left img {
+      float: left;
+    }
+  }
+}

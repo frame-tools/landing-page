@@ -1,0 +1,26 @@
+header.header
+  .header__content.header__content--fluid-width
+    .header__logo-title LATERAL
+    nav.header__menu
+      ul
+        li
+          a.selected.header-link(href='#intro') HOME
+        li.menu-item-has-children
+          a.header-link(href='#features') FEATURES
+          ul.sub-menu
+            li
+              a.header-link(href='#about') OUR PRODUCTS
+            li
+              a.header-link(href='#about2') HOW IT WORKS
+            li
+              a.header-link(href='#clients') OUR CLIENTS
+            li
+              a.header-link(href='#testimonials') TESTIMONIALS
+            li
+              a.header-link(href='#contact') SUPPORT
+        li
+          a.header-link(href='#pricing') PRICING
+        li
+          a.header-link(href='#contact') CONTACT
+        li.header__btn.header__btn--login.modal-toggle(data-openpopup='signuplogin' data-popup='login')
+          a(href='#') CLIENT AREA

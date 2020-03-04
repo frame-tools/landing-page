@@ -1,0 +1,40 @@
+.section__content--about {
+  padding: 100px 0 0 0;
+}
+
+.grid--about {
+  .grid__item {
+    margin-bottom: 0px;
+
+    &--floated-right {
+      margin-left: 80px;
+    }
+  }
+
+  .grid {
+    &__title {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 300;
+      padding: 0 0 40px 0;
+      margin: 0px;
+      position: relative;
+    }
+
+    &__text {
+      font-size: 18px;
+      color: #848484;
+      line-height: 26px;
+    }
+
+    &__list {
+      padding: 20px 0 0 0;
+
+      li {
+        background: url('/assets/images/checked.png') no-repeat 0 50%;
+        font-size: 18px;
+        padding: 10px 0 10px 40px;
+      }
+    }
+  }
+}

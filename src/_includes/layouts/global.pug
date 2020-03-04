@@ -1,15 +1,25 @@
 doctype html
 html(lang=locale)
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1')
+    meta(name='author' content='SmartTemplates')
+    meta(name='description' content='landing page template for saas companies')
+    meta(name='keywords' content='landing page template, saas landing page template, saas website template, one page saas template')
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat&display=swap")
-    link(rel="stylesheet", type="text/css", href="/assets/styles/style.css")
+    include /parts/styles.pug
     title #{t(locale, 'title')}
   body
-    div#particles-js.particles
-    .container
-      .soon #{t(locale, 'soon')}
-    script(src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js")
-    script(src="/assets/scripts/script.js")
+    include /parts/header.pug
+    include /sections/intro.pug
+    include /sections/features.pug
+    include /sections/about.pug
+    include /sections/testimonials.pug
+    include /sections/pricing.pug
+    include /sections/contact.pug
+    include /sections/clients.pug
+    include /sections/cta.pug
+    include /parts/footer.pug
+    include /modals/auth.pug
+    include /modals/animation.pug
+    include /parts/scripts.pug

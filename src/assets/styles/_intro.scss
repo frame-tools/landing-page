@@ -73,6 +73,7 @@
 
   &__buttons {
     padding: 20px 0 0 0;
+    text-transform: uppercase;
   }
 
   &__buttons--centered {
@@ -114,6 +115,7 @@ svg {
   top: 0px;
   left: 0px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .letter {

@@ -9,3 +9,16 @@ translation:
     who: Who we are
     clients: Our clients
     contact: Contact
+  intro:
+    sentence: Best choice for
+    words:
+      - innovation
+      - results
+      - intelligence
+      - impact
+      - automation
+    subtitle: We believe in the power of technology to boost businesses, drive results and generate impact.
+    description: "See what we can do for you and get in touch :)"
+    action:
+      more: Learn more
+      contact: Contact us

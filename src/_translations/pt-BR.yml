@@ -9,3 +9,16 @@ translation:
     who: Quem somos
     clients: Nossos clientes
     contact: Fale conosco
+  intro:
+    sentence: Seus parceiros em
+    words:
+      - inovação
+      - resultados
+      - inteligência
+      - impacto
+      - dinamização
+    subtitle: Nós acreditamos no poder da tecnologia para dinamizar negócios, impulsionar resultados e gerar impacto.
+    description: "Veja o que podemos fazer por você e entre em contato para marcarmos um café :)"
+    action:
+      more: Saiba mais
+      contact: Fale conosco

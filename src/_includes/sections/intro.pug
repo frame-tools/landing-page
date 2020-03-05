@@ -3,19 +3,18 @@ section#intro.section.section--intro
     .intro
       .intro__content
         .intro__title
-          strong Make your mobile app
+          strong #{t(locale, 'intro.sentence')}
           .intro__title__words-animation
-            span.intro__title--word-animated.word Awesome
-            span.intro__title--word-animated.word Stronger
-            span.intro__title--word-animated.word Intuitive
-        .intro__subtitle We believe we have created the most efficient SaaS landing page for your users. 
-        .intro__description
-          | For as low as 
-          span $9.95
-          |  per user month
+            span.intro__title--word-animated.word #{t(locale, 'intro.words.0')}
+            span.intro__title--word-animated.word #{t(locale, 'intro.words.1')}
+            span.intro__title--word-animated.word #{t(locale, 'intro.words.2')}
+            span.intro__title--word-animated.word #{t(locale, 'intro.words.3')}
+            span.intro__title--word-animated.word #{t(locale, 'intro.words.4')}
+        .intro__subtitle #{t(locale, 'intro.subtitle')}
+        .intro__description #{t(locale, 'intro.description')}
         .intro__buttons.intro__buttons--left
-          a.btn.btn--blue-bg.btn--play.modal-toggle(href='index.html' data-openpopup='animation') WATCH DEMO
-          a.btn.btn--dark-bg(href='index.html') START NOW
+          a.btn.btn--blue-bg(href='#about') #{t(locale, 'intro.action.more')}
+          a.btn.btn--dark-bg(href='#contact') #{t(locale, 'intro.action.contact')}
   .intro-animation
     img(src='/assets/images/intro-animation.png' alt='' title='')
   svg.svg-intro-bottom(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')

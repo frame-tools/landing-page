@@ -1,3 +1,11 @@
 translation:
   title: Frame Tools
-  soon: Coming soon
+  description: Frame Tools website
+  keywords: website, development, company
+  menu:
+    home: Home
+    about: About
+    what: What we do
+    who: Who we are
+    clients: Our clients
+    contact: Contact

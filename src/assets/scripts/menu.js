@@ -58,7 +58,7 @@ $(document).ready(function () {
 		var currLink = $(this);
 		var id = currLink.attr("href")
 
-		if (id === '#') {
+		if (!id || id === '#' || !id.includes('#')) {
 			return
 		}
 

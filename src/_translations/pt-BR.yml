@@ -1,3 +1,11 @@
 translation:
   title: Frame Tools
-  soon: Em breve
+  description: Site da frame Tools
+  keywords: site, desenvolvimento, empresa
+  menu:
+    home: Início
+    about: Sobre nós
+    what: O que fazemos
+    who: Quem somos
+    clients: Nossos clientes
+    contact: Fale conosco

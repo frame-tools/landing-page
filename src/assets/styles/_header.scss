@@ -13,6 +13,7 @@
   }
 
   &__content {
+    display: flex;
     height: 70px;
 
     &--fix-width {
@@ -29,19 +30,25 @@
   }
 
   &__logo-title {
+    background-image: url('/assets/images/logo_h.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     color: #fff;
+    filter: invert(1);
     font-size: 26px;
     letter-spacing: -1px;
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: filter .5s ease-in-out;
     z-index: 999;
+    width: 205px;
 
     .header--sticky &,
     .header--page &,
     .menu-open & {
+      filter: invert(0);
       color: #000;
     }
 
@@ -51,7 +58,7 @@
   }
 
   &__menu {
-    float: right;
+    margin-left: auto;
 
     ul,
     ul li,
@@ -64,6 +71,7 @@
       display: block;
       float: left;
       position: relative;
+      text-transform: uppercase;
       box-sizing: border-box;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       -webkit-tap-highlight-color: transparent;
@@ -220,6 +228,28 @@
 
           &:last-child a {
             border-bottom: none;
+          }
+        }
+      }
+
+      .flag {
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 32px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          img {
+            filter: brightness(1.2);
+
+            .header--sticky &,
+            .menu-open & {
+              filter: brightness(.8);
+            }
           }
         }
       }

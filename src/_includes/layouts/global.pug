@@ -3,14 +3,15 @@ html(lang=locale)
   head
     meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
     meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1')
-    meta(name='author' content='SmartTemplates')
-    meta(name='description' content='landing page template for saas companies')
-    meta(name='keywords' content='landing page template, saas landing page template, saas website template, one page saas template')
+    meta(name='author' content='Frame Tools')
+    meta(name='description' content=t(locale, 'description'))
+    meta(name='keywords' content=t(locale, 'keywords'))
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     include /parts/styles.pug
     title #{t(locale, 'title')}
   body
     include /parts/header.pug
+
     include /sections/intro.pug
     include /sections/features.pug
     include /sections/about.pug
@@ -19,7 +20,6 @@ html(lang=locale)
     include /sections/contact.pug
     include /sections/clients.pug
     include /sections/cta.pug
+
     include /parts/footer.pug
-    include /modals/auth.pug
-    include /modals/animation.pug
     include /parts/scripts.pug

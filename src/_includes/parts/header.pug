@@ -1,26 +1,26 @@
 header.header
   .header__content.header__content--fluid-width
-    .header__logo-title LATERAL
+    .header__logo-title #{t(locale, 'title')}
     nav.header__menu
       ul
         li
-          a.selected.header-link(href='#intro') HOME
+          a.selected.header-link(href='#intro') #{t(locale, 'menu.home')}
         li.menu-item-has-children
-          a.header-link(href='#features') FEATURES
+          a.header-link(href='#about') #{t(locale, 'menu.about')}
           ul.sub-menu
             li
-              a.header-link(href='#about') OUR PRODUCTS
+              a.header-link(href='#about') #{t(locale, 'menu.what')}
             li
-              a.header-link(href='#about2') HOW IT WORKS
-            li
-              a.header-link(href='#clients') OUR CLIENTS
-            li
-              a.header-link(href='#testimonials') TESTIMONIALS
-            li
-              a.header-link(href='#contact') SUPPORT
+              a.header-link(href='#about2') #{t(locale, 'menu.who')}
         li
-          a.header-link(href='#pricing') PRICING
+          a.header-link(href='#clients') #{t(locale, 'menu.clients')}
         li
-          a.header-link(href='#contact') CONTACT
-        li.header__btn.header__btn--login.modal-toggle(data-openpopup='signuplogin' data-popup='login')
-          a(href='#') CLIENT AREA
+          a.header-link(href='#contact') #{t(locale, 'menu.contact')}
+        li
+          case locale
+            when 'pt-BR'
+              a.header-link.flag(href='/en' title="View in english")
+                img(src="/assets/images/icons/flags/us.png")
+            when 'en-US'
+              a.header-link.flag(href='/' title="Ver em português")
+                img(src="/assets/images/icons/flags/br.png")

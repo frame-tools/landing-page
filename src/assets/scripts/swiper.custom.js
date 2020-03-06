@@ -9,7 +9,8 @@ var swiper = new Swiper('.testimonials', {
   pagination: {
 	el: '.swiper-pagination',
 	dynamicBullets: true,
-	clickable : true
+  clickable : true,
+  parallax: true,
   },
   navigation: {
 	nextEl: '.swiper-button-next',

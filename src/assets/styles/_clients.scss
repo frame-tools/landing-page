@@ -24,20 +24,21 @@ svg {
 }
 
 .grid__client-logo {
-  a {
-    position: relative;
-    z-index: 333;
-
-    &:hover img {
-      opacity: .5;
-    }
-  }
+  position: relative;
+  z-index: 223;
 
   img {
     display: block;
+    filter: saturate(0);
     max-width: 100%;
     margin: auto;
+    opacity: .8;
     text-align: center;
     transition: all 0.3s;
+
+    &:hover {
+      filter: saturate(1);
+      opacity: 1;
+    }
   }
 }

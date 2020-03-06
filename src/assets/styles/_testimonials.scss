@@ -12,7 +12,7 @@
 
   &__slide {
     text-align: center;
-    width: 33.333%;
+    width: 25%;
     float: left;
 
     &:hover {
@@ -52,15 +52,16 @@
     line-height: 20px;
     letter-spacing: -0.5px;
 
-    a {
+    a,
+    span {
       color: #2d017c;
       display: block;
       font-size: 14px;
       transition: all 0.5s;
+    }
 
-      &:hover {
-        color: #000;
-      }
+    a:hover {
+      color: #000;
     }
   }
 

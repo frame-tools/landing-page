@@ -24,6 +24,7 @@
     "moment": "^2.24.0"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "eleventy-plugin-sass": "^1.0.0",
     "i18next": "^19.3.2",
     "require-yml": "^1.4.0"

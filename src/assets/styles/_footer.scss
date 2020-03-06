@@ -29,6 +29,15 @@
       padding-top: 100px;
     }
   }
+
+  a {
+    color: #000000;
+    
+    &:hover,
+    &:focus {
+      color: #7a4be5;
+    }
+  }
 }
 
 .grid__title--footer {

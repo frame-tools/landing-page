@@ -1,14 +1,14 @@
 section#contact.section.section--contact
   .section__content.section__content--fluid-width.section__content--padding
-    h2.section__title.section__title--centered Get in touch
+    h2.section__title.section__title--centered Fale conosco
     .section__description.section__description--centered
-      | Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service
+      | Quer inovar com a gente? Entre em contato e marcamos uma conversa :)
     .grid.grid--contact
       .grid__item.grid__item--form
         .grid__form.form
-          form#ContactForm.form__container(method='post' action='index.html')
+          form#ContactForm.form__container(method='post' action='/api/contact')
             .form__row
-              label.form__label(for='namec') Name
+              label.form__label(for='namec') Nome
               input#namec.form__input(name='namec' type='text')
               span.form__row-border
             .form__row
@@ -16,7 +16,7 @@ section#contact.section.section--contact
               input.form__input(name='emailc' type='text')
               span.form__row-border
             .form__row
-              label.form__label Message
+              label.form__label Mensagem
               textarea.form__textarea(name='message' rows='3' cols='3')
               span.form__row-border
-            input#submitc.form__submit.btn.btn--blue-bg(type='submit' name='submit' value='SEND MESSAGE')
+            input#submitc.form__submit.btn.btn--blue-bg(type='submit' name='submit' value='ENVIAR MENSAGEM')

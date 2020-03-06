@@ -3,5 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/", "destination": "/pt/index.html" }
-  ]
+  ],
+  "build": {
+    "env": {
+      "LEADCAPTURE_DISCORD_ENDPOINT": "@leadcapture_discord_endpoint"
+    }
+  }
 }

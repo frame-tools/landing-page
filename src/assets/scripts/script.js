@@ -1,1 +1,6 @@
-particlesJS.load('particles-js', '/assets/misc/particles.json')
+$(document).ready(function () {
+	"use strict";
+	if (jQuery.isFunction(jQuery.fn.paroller) && screen.width > 800 ) {
+		$("[data-paroller-factor]").paroller();
+	}
+});

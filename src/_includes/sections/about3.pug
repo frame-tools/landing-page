@@ -1,6 +1,9 @@
-section#about.section
+section#about3.section
   .section__content.section__content--fluid-width.section__content--about
     .grid.grid--5col.grid--about
+      .grid__item.grid__item--x3.grid__item--floated-right
+        .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
+          img(src='/assets/images/desktop-frame-about-2.png' alt='' title='')
       .grid__item.grid__item--x2
         h3.grid__title
           | Uma filosofia voltada ao #[span usuário]
@@ -10,6 +13,3 @@ section#about.section
           li Design focado na experiência do usuário (UX)
           li HTML semântico
           li Sistemas gerenciáveis e fáceis de usar
-      .grid__item.grid__item--x3
-        .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
-          img(src='/assets/images/desktop-frame-about-2.png' alt='' title='')

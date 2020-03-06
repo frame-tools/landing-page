@@ -1,8 +1,8 @@
-.section--testimonials {
+.section--team {
   background-color: #f7f8f9;
 }
 
-.testimonials {
+.team {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -70,6 +70,7 @@
     text-align: center;
     bottom: 0 !important;
     z-index: 999 !important;
+    display: none;
 
     .swiper-pagination-bullet {
       width: 10px;
@@ -107,5 +108,6 @@
     width: 20px;
     height: 40px;
     background-size: 20px 40px;
+    display: none;
   }
 }

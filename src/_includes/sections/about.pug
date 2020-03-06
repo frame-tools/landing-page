@@ -1,6 +1,9 @@
 section#about.section
   .section__content.section__content--fluid-width.section__content--about
     .grid.grid--5col.grid--about
+      .grid__item.grid__item--x3.grid__item--floated-right
+        .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
+          img(src='/assets/images/desktop-frame-about.png' alt='' title='')
       .grid__item.grid__item--x2
         h3.grid__title
           | #[span Conectamos] seu negócio ao mundo digital
@@ -10,6 +13,3 @@ section#about.section
           li Design de soluções de software
           li Equipes de Desenvolvimento Ágil
           li Entregas rápidas e funcionais
-      .grid__item.grid__item--x3
-        .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
-          img(src='/assets/images/desktop-frame-about.png' alt='' title='')

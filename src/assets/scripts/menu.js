@@ -1,130 +1,130 @@
 $(document).ready(function () {
 	"use strict";
-	function navScroll(){
+	function navScroll() {
 		var window_top = $(window).scrollTop();
 		var div_top = $('body').offset().top;
 		if (window_top > div_top) {
-				$('.header').addClass('header--sticky');
-				$('.header__menu ul ul').addClass('submenu-header-sticky');
-			} else {
-				$('.header').removeClass('header--sticky');
-				$('.header__menu ul ul').removeClass('submenu-header-sticky');
-			}
+			$('.header').addClass('header--sticky');
+			$('.header__menu ul ul').addClass('submenu-header-sticky');
+		} else {
+			$('.header').removeClass('header--sticky');
+			$('.header__menu ul ul').removeClass('submenu-header-sticky');
+		}
 	}
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		navScroll();
 	});
 	navScroll();
 
 	$(document).on("scroll", onScroll);
 
-	var delegate = function(criteria, listener) {
-	  return function(e) {
-		var el = e.target;
-		do {
-		  if (!criteria(el)) continue;
-		  e.delegateTarget = el;
-		  listener.apply(this, arguments);
-		  return;
-		} while( (el = el.parentNode) );
-	  };
+	var delegate = function (criteria, listener) {
+		return function (e) {
+			var el = e.target;
+			do {
+				if (!criteria(el)) continue;
+				e.delegateTarget = el;
+				listener.apply(this, arguments);
+				return;
+			} while ((el = el.parentNode));
+		};
 	};
 	var toolbar = document.querySelector(".header__menu");
-	var buttonsFilter = function(elem) { return elem.classList && elem.classList.contains("header-link"); };
-	var buttonHandler = function(e) {
-	  var button = e.delegateTarget;
-	  if(!button.classList.contains("active")){
-		button.classList.add("active");
-		 var target = button.hash;
-		 var $target = $(target);
+	var buttonsFilter = function (elem) { return elem.classList && elem.classList.contains("header-link"); };
+	var buttonHandler = function (e) {
+		var button = e.delegateTarget;
+		if (!button.classList.contains("active")) {
+			button.classList.add("active");
+			var target = button.hash;
+			var $target = $(target);
 
-		   $('html, body').stop().animate({
-				'scrollTop': $target.offset().top
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top - $(toolbar).height()
 			}, 600, 'swing', function () {
 				window.location.hash = target;
 				$(document).on("scroll", onScroll);
 			});
-			}
-	  else {
-		button.classList.remove("active");
+		}
+		else {
+			button.classList.remove("active");
 		}
 	};
 	toolbar.addEventListener("click", delegate(buttonsFilter, buttonHandler));
 
-	function onScroll(event){
+	function onScroll(event) {
+		var scrollPos = $(document).scrollTop();
+		var menu = $('.header__menu');
 
-	var scrollPos = $(document).scrollTop();
-	$('.header__menu ul li a').each(function () {
-		var currLink = $(this);
-		var id = currLink.attr("href")
+		$('.header__menu ul li a').each(function () {
+			var currLink = $(this);
+			var id = currLink.attr("href")
 
-		if (!id || id === '#' || !id.includes('#')) {
-			return
-		}
+			if (!id || id === '#' || !id.includes('#')) {
+				return
+			}
 
-		var refElement = $(id);
-		var position = refElement.position()
+			var refElement = $(id);
+			var position = refElement.position()
 
-		if (!refElement.position()) {
-			return
-		}
+			if (!refElement.position()) {
+				return
+			}
 
-		if (position.top <= scrollPos && position.top + refElement.height() > scrollPos) {
-			$('.header__menu ul li a').removeClass("selected");
-			currLink.addClass("active");
-		}
-		else{
-			currLink.removeClass("active");
-		}
-	});
+			if (position.top <= scrollPos && position.top + refElement.height() > scrollPos) {
+				$('.header__menu ul li a').removeClass("selected");
+				currLink.addClass("active");
+			}
+			else {
+				currLink.removeClass("active");
+			}
+		});
 	}
 
-	$.fn.menumaker = function(options) {
+	$.fn.menumaker = function (options) {
+		var cssmenu = $(this), settings = $.extend({
+			title: "Menu",
+			format: "dropdown",
+			sticky: false
+		}, options);
 
-	var cssmenu = $(this), settings = $.extend({
-	title: "Menu",
-	format: "dropdown",
-	sticky: false
-	}, options);
+		return this.each(function () {
+			cssmenu.prepend('<div class="menu-button"></div>');
+			$(this).find(".menu-button").on('click', function () {
+				$(this).parent().parent().parent().toggleClass('menu-open');
 
-	return this.each(function() {
-	cssmenu.prepend('<div class="menu-button"></div>');
-	$(this).find(".menu-button").on('click', function(){
-	  $(this).parent().parent().parent().toggleClass('menu-open');
+				var mainmenu = $(this).next('ul');
+				mainmenu.toggleClass('open');
+				$('.header__menu ul a[href^="#"]').on('click', function (e) {
+					$('.header__menu ul').removeClass('open');
+					$('.header').removeClass('menu-open');
+				});
+			});
 
-	  var mainmenu = $(this).next('ul');
-	  mainmenu.toggleClass('open');
-	  $('.header__menu ul a[href^="#"]').on('click', function (e) {
-				$('.header__menu ul').removeClass('open');
-				$('.header').removeClass('menu-open');
+			var multiTg = function () {
+				cssmenu.find(".menu-item-has-children").prepend('<span class="submenu-button"></span>');
+				cssmenu.find('.submenu-button').on('click', function () {
+					$(this).toggleClass('submenu-opened');
+					if ($(this).siblings('ul').hasClass('open')) {
+						$(this).siblings('ul').removeClass('open').hide();
+					}
+					else {
+						$(this).siblings('ul').addClass('open').show();
+					}
+				});
+			};
+
+			if (settings.format === 'multitoggle') multiTg();
+			else cssmenu.addClass('dropdown');
+
+			if (settings.sticky === true) cssmenu.addClass('sticky');
+
+
 		});
-	});
-
-	var multiTg = function() {
-	  cssmenu.find(".menu-item-has-children").prepend('<span class="submenu-button"></span>');
-	  cssmenu.find('.submenu-button').on('click', function() {
-		$(this).toggleClass('submenu-opened');
-		if ($(this).siblings('ul').hasClass('open')) {
-		  $(this).siblings('ul').removeClass('open').hide();
-		}
-		else {
-		  $(this).siblings('ul').addClass('open').show();
-		}
-	  });
-	};
-
-	if (settings.format === 'multitoggle') multiTg();
-	else cssmenu.addClass('dropdown');
-
-	if (settings.sticky === true) cssmenu.addClass('sticky');
-
-
-	});
 	};
 
 	$(".header__menu").menumaker({
-	format: "multitoggle",
-	sticky: true
+		format: "multitoggle",
+		sticky: true
 	});
 
 });

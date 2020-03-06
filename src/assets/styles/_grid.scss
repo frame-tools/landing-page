@@ -33,7 +33,7 @@
       padding: 20px;
     }
 
-    .grid &:last-child,
+    .grid &:last-child:not(:only-child),
     .grid--2col &:nth-child(2n + 2) {
       float: right;
       margin-right: 0px;

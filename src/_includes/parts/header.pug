@@ -16,11 +16,11 @@ header.header
           a.header-link(href='#clients') #{t(locale, 'menu.clients')}
         li
           a.header-link(href='#contact') #{t(locale, 'menu.contact')}
-        li
-          case locale
-            when 'pt-BR'
-              a.header-link.flag(href='/en' title="View in english")
-                img(src="/assets/images/icons/flags/us.png")
-            when 'en-US'
-              a.header-link.flag(href='/' title="Ver em português")
-                img(src="/assets/images/icons/flags/br.png")
+        //- li
+        //-   case locale
+        //-     when 'pt-BR'
+        //-       a.header-link.flag(href='/en' title="View in english")
+        //-         img(src="/assets/images/icons/flags/us.png")
+        //-     when 'en-US'
+        //-       a.header-link.flag(href='/' title="Ver em português")
+        //-         img(src="/assets/images/icons/flags/br.png")

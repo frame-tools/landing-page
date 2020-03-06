@@ -1,8 +1,4 @@
 (function () {
-  if (window && window.innerWidth > 800) {
-    return
-  }
-
   new Swiper('.team', {
     speed: 600,
     slidesPerView: "auto",

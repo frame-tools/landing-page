@@ -6,17 +6,17 @@ section#contact.section.section--contact
     .grid.grid--contact
       .grid__item.grid__item--form
         .grid__form.form
-          form#ContactForm.form__container(method='post' action='/api/contact')
+          form#ContactForm.form__container(method='post' action='/contact')
             .form__row
               label.form__label(for='namec') Nome
-              input#namec.form__input(name='namec' type='text')
+              input#namec.form__input(name='Name' type='text')
               span.form__row-border
             .form__row
               label.form__label Email
-              input.form__input(name='emailc' type='text')
+              input.form__input(name='Email' type='text')
               span.form__row-border
             .form__row
               label.form__label Mensagem
-              textarea.form__textarea(name='message' rows='3' cols='3')
+              textarea.form__textarea(name='Message' rows='3' cols='3')
               span.form__row-border
-            input#submitc.form__submit.btn.btn--blue-bg(type='submit' name='submit' value='ENVIAR MENSAGEM')
+            button#submitc.form__submit.btn.btn--blue-bg(type='submit') ENVIAR MENSAGEM

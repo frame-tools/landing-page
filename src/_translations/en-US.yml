@@ -62,3 +62,22 @@ translation:
     description: Headed by entrepreneurial developers with over ten years of experience
   clients:
     title: Who has innovated with us
+  contact:
+    title: Contact us
+    description: Do you want to innovate with us? Get in touch :)
+    label:
+      name: Name
+      email: Email
+      message: Message
+      submit: SEND MESSAGE
+    submit:
+      success:
+        title: Success
+        content: Thank you! We will respond to your contact shortly.
+        error:
+          title: An error has occurred
+          content: We apologize for the inconvenience. Try again later.
+  footer:
+    legal: All rights reserved. Made with ❤️ in Curitiba, Brazil.
+    contact:
+      title: Contact info

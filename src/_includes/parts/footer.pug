@@ -6,7 +6,7 @@ footer#footer.footer
         p.grid__text.grid__text--copyright
           | Copyright &copy; 2020 Frame Tools.
           br
-          | Todos os direitos reservados. Feito com ❤️ em Curitiba.
+          | #{t(locale, 'footer.legal')}
         ul.grid__list.grid__list--sicons
           li
             a(href='#')
@@ -18,7 +18,7 @@ footer#footer.footer
             a(href='#')
               img(src='/assets/images/social/black/linkedin.png' alt='' title='')
       .grid__item.contact
-        h3.grid__title.grid__title--footer-logo Contato
+        h3.grid__title.grid__title--footer-logo=t(locale, 'footer.contact.title')
         p.grid__text.grid__text--copyright
           a(href='mailto:contato@frametools.dev') contato@frametools.dev
           br

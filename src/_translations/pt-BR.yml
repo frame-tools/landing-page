@@ -63,6 +63,13 @@ translation:
   clients:
     title: Quem já inovou conosco
   contact:
+    title: Fale conosco
+    description: Quer inovar com a gente? Entre em contato e marcamos uma conversa :)
+    label:
+      name: Nome
+      email: Email
+      message: Mensagem
+      submit: ENVIAR MENSAGEM
     submit:
       success:
         title: Sucesso
@@ -70,3 +77,7 @@ translation:
         error:
           title: Ocorreu um erro
           content: Pedimos desculpas pelo inconveniente. Tente novamente mais tarde.
+  footer:
+    legal: Todos os direitos reservados. Feito com ❤️ em Curitiba.
+    contact:
+      title: Contato

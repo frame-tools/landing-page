@@ -1,23 +1,22 @@
 section#contact.section.section--contact
   .section__content.section__content--fluid-width.section__content--padding
-    h2.section__title.section__title--centered Fale conosco
-    .section__description.section__description--centered
-      | Quer inovar com a gente? Entre em contato e marcamos uma conversa :)
+    h2.section__title.section__title--centered=t(locale, 'contact.title')
+    .section__description.section__description--centered=t(locale, 'contact.description')
     .grid.grid--contact
       .grid__item.grid__item--form
         .grid__form.form
           form#ContactForm.form__container(method='post' action='/contact')
             input(type="hidden" name="captcha")
             .form__row
-              label.form__label(for='namec') Nome
+              label.form__label(for='namec')=t(locale, 'contact.label.name')
               input#namec.form__input(name='Name' type='text' required)
               span.form__row-border
             .form__row
-              label.form__label Email
+              label.form__label=t(locale, 'contact.label.email')
               input.form__input(name='Email' type='text' required)
               span.form__row-border
             .form__row
-              label.form__label Mensagem
+              label.form__label=t(locale, 'contact.label.message')
               textarea.form__textarea(name='Message' rows='3' cols='3')
               span.form__row-border
-            button#submitc.form__submit.btn.btn--blue-bg(type='submit') ENVIAR MENSAGEM
+            button#submitc.form__submit.btn.btn--blue-bg(type='submit')=t(locale, 'contact.label.submit')

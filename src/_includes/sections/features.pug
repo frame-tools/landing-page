@@ -1,27 +1,20 @@
 section#features.section.section--features
   .section__content.section__content--fluid-width.section__content--features
-    h2.section__title.section__title--centered Serviços pensados para te atender
-    .section__description.section__description--centered
-      | Nosso objetivo é ser o braço de TI da sua organização. Por isso contamos com profissionais capacitados para atender a todas as necessidades tecnológicas de uma corporação.
+    h2.section__title.section__title--centered=t(locale, 'features.title')
+    .section__description.section__description--centered=t(locale, 'features.description')
     .grid.grid--3col.grid--features
       .grid__item
         .grid__icon
           img(src='/assets/images/icons/icons-96-black/desktop-windows-96.png' alt='' title='')
-        h3.grid__title
-          | Design #[span de soluções de software]
-        p.grid__text
-          | Com uma abordagem focada em #[em Design Thinking], buscamos fazer uma imersão no negócio para gerar uma ideação de qualidade e prototipar soluções inovadoras.
+        h3.grid__title!=t(locale, 'features.list.0.title')
+        p.grid__text!=t(locale, 'features.list.0.description')
       .grid__item
         .grid__icon
           img(src='/assets/images/icons/icons-96-black/desktop-code-96.png' alt='' title='')
-        h3.grid__title
-          | #[span Código com as] melhores práticas
-        p.grid__text
-          | Desenvolvimento web e mobile com código limpo, testável, reutilizável e com as #[em design patterns] mais utilizadas no momento.
+        h3.grid__title!=t(locale, 'features.list.1.title')
+        p.grid__text!=t(locale, 'features.list.1.description')
       .grid__item
         .grid__icon
           img(src='/assets/images/icons/icons-96-black/desktop-chart-96.png' alt='' title='')
-        h3.grid__title
-          | #[span Informação com ] inteligência
-        p.grid__text
-          | Integração de sistemas, #[em Business Intelligence] (BI), relatórios temáticos. Extraímos inteligência dos bancos de dados para potencializar as suas tomadas de decisão.
+        h3.grid__title!=t(locale, 'features.list.2.title')
+        p.grid__text!=t(locale, 'features.list.2.description')

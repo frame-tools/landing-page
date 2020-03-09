@@ -5,11 +5,8 @@ section#about.section
         .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
           img(src='/assets/images/desktop-frame-about.png' alt='' title='')
       .grid__item.grid__item--x2
-        h3.grid__title
-          | #[span Conectamos] seu negócio ao mundo digital
-        p.grid__text
-          | Desde a prototipação até a gestão da equipe, atuamos com profissionalismo para levar inteligência em tecnologia a você.
+        h3.grid__title!=t(locale, 'about.0.title')
+        p.grid__text!=t(locale, 'about.0.text')
         ul.grid__list
-          li Design de soluções de software
-          li Equipes de Desenvolvimento Ágil
-          li Entregas rápidas e funcionais
+          each index in [0, 1, 2]
+            li!=t(locale, 'about.0.list.' + index)

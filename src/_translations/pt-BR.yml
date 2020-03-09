@@ -22,6 +22,41 @@ translation:
     action:
       more: Saiba mais
       contact: Fale conosco
+  about:
+    -
+      title: <span>Conectamos</span> seu negócio ao mundo digital
+      text: Desde a prototipação até a gestão da equipe, atuamos com profissionalismo para levar inteligência em tecnologia a você.
+      list:
+        - Design de soluções de software
+        - Equipes de Desenvolvimento Ágil
+        - Entregas rápidas e funcionais
+    -
+      title: Os <span>melhores profissionais</span> ao seu dispor
+      text: Nossa equipe é selecionada à dedo com mão de obra brasileira de alto nível.
+      list:
+        - Designers premiados
+        - Desenvolvedores sêniors
+        - Cultura empresarial empreendedora
+    -
+      title: Uma filosofia voltada ao <span>usuário</span>
+      text: Sabemos da importância e nos preocupamos com a acessibilidade desde a concepção dos produtos.
+      list:
+        - Design focado na experiência do usuário (UX)
+        - HTML semântico
+        - Sistemas gerenciáveis e fáceis de usar
+  features:
+    title: Serviços pensados para te atender
+    description: Nosso objetivo é ser o braço de TI da sua organização. Por isso contamos com profissionais capacitados para atender a todas as necessidades tecnológicas de uma corporação.
+    list:
+      -
+        title: Design <span>de soluções de software</span>
+        description: Com uma abordagem focada em <em>Design Thinking</em>, buscamos fazer uma imersão no negócio para gerar uma ideação de qualidade e prototipar soluções inovadoras.
+      -
+        title: <span>Código com as</span> melhores práticas
+        description: Desenvolvimento web e mobile com código limpo, testável, reutilizável e com as <em>design patterns</em> mais utilizadas no momento.
+      -
+        title: <span>Informação com</span> inteligência
+        description: Integração de sistemas, <em>Business Intelligence</em> (BI), relatórios temáticos. Extraímos inteligência dos bancos de dados para potencializar as suas tomadas de decisão.
   contact:
     submit:
       success:

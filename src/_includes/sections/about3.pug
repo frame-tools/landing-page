@@ -5,11 +5,8 @@ section#about3.section
         .grid__image.grid__image--right(data-paroller-factor='0.2' data-paroller-type='foreground' data-paroller-direction='vertical')
           img(src='/assets/images/desktop-frame-about-2.png' alt='' title='')
       .grid__item.grid__item--x2
-        h3.grid__title
-          | Uma filosofia voltada ao #[span usuário]
-        p.grid__text
-          | Sabemos da importância e nos preocupamos com a acessibilidade desde a concepção dos produtos.
+        h3.grid__title!=t(locale, 'about.2.title')
+        p.grid__text!=t(locale, 'about.2.text')
         ul.grid__list
-          li Design focado na experiência do usuário (UX)
-          li HTML semântico
-          li Sistemas gerenciáveis e fáceis de usar
+          each index in [0, 1, 2]
+            li!=t(locale, 'about.2.list.' + index)

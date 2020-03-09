@@ -22,3 +22,38 @@ translation:
     action:
       more: Learn more
       contact: Contact us
+  about:
+    -
+      title: We <span>connect</span> your business to the digital world
+      text: From prototyping to team management, we work to bring technology intelligence to you.
+      list:
+        - Designing of software solutions
+        - Agile development teams
+        - Fast and functional deliveries (MVP)
+    -
+      title: The <span>best professionals</span> at your service
+      text: Our team is hand-selected with high-level Brazilian labor.
+      list:
+        - Award-winning designers
+        - Senior developers only
+        - Entrepreneurial business culture
+    -
+      title: An <span>user-centered</span> philosophy
+      text: We know the importance and we are concerned with accessibility since the product design.
+      list:
+        - Design focused on user experience (UX)
+        - Semantic HTML
+        - Manageable and easy to use systems
+  features:
+    title: Services designed for you
+    description: Our goal is to be your organization's IT department. That is why we have the most prepared professionals to meet all the technological needs of a corporation.
+    list:
+      -
+        title: Designing <span>of software solutions</span>
+        description: With an approach focused on Design Thinking, we seek to immerse ourselves in the business to generate quality ideas and prototype innovative solutions.
+      -
+        title: <span>Coding with the</span> best practices
+        description: Web and mobile development with clean, testable, reusable code and with the most used design patterns at the moment.
+      -
+        title: <span>Information with</span> intelligence
+        description: Systems integration, Business Intelligence (BI), thematic reports. We extract intelligence from the databases to enhance your decision making.

@@ -1,8 +1,7 @@
 section#team.section.section--team
   .section__content.section__content--fluid-width.section__content--padding
-    h2.section__title.section__title--centered Uma empresa com rosto
-    .section__description.section__description--centered
-      | Encabeçada por desenvolvedores empreendedores com mais de dez anos de experiência
+    h2.section__title.section__title--centered=t(locale, 'team.title')
+    .section__description.section__description--centered=t(locale, 'team.description')
     .team
       .team__content.swiper-wrapper
         .team__slide.swiper-slide

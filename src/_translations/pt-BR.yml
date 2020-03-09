@@ -57,6 +57,11 @@ translation:
       -
         title: <span>Informação com</span> inteligência
         description: Integração de sistemas, <em>Business Intelligence</em> (BI), relatórios temáticos. Extraímos inteligência dos bancos de dados para potencializar as suas tomadas de decisão.
+  team:
+    title: Uma empresa com rosto
+    description: Encabeçada por desenvolvedores empreendedores com mais de dez anos de experiência
+  clients:
+    title: Quem já inovou conosco
   contact:
     submit:
       success:

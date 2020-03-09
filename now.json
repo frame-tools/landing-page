@@ -17,7 +17,8 @@
   },
   "build": {
     "env": {
-      "RECAPTCHA_PUBLIC": "@recaptcha_public"
+      "RECAPTCHA_PUBLIC": "@recaptcha_public",
+      "GTM_ID": "@gtm_id"
     }
   }
 }

@@ -229,6 +229,20 @@
     clear: both;
     padding: 10px 0 0 0;
   }
+
+  .busy {
+    position: relative;
+
+    &:after {
+      content: '';
+      background-color: rgba(#f7f8f9, .7);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 select.select__field {

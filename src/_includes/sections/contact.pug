@@ -7,13 +7,14 @@ section#contact.section.section--contact
       .grid__item.grid__item--form
         .grid__form.form
           form#ContactForm.form__container(method='post' action='/contact')
+            input(type="hidden" name="captcha")
             .form__row
               label.form__label(for='namec') Nome
-              input#namec.form__input(name='Name' type='text')
+              input#namec.form__input(name='Name' type='text' required)
               span.form__row-border
             .form__row
               label.form__label Email
-              input.form__input(name='Email' type='text')
+              input.form__input(name='Email' type='text' required)
               span.form__row-border
             .form__row
               label.form__label Mensagem

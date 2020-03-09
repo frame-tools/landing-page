@@ -4,4 +4,20 @@ script(src='/assets/scripts/swiper.min.js')
 script(src='/assets/scripts/swiper.custom.js')
 script(src='/assets/scripts/menu.js')
 script(src='/assets/scripts/animation.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js')
+script(src='https://www.google.com/recaptcha/api.js?render=' + recaptcha)
 script(src='/assets/scripts/script.js')
+script.
+  window.RECAPTCHA_KEY='!{recaptcha}';
+
+  grecaptcha.ready(function() {
+    grecaptcha.execute(RECAPTCHA_KEY, {action: 'homepage'})
+  });
+
+  function submitSuccess () {
+    toastr.success('!{t(locale, "contact.submit.success.content")}', '!{t(locale, "contact.submit.success.title")}')
+  }
+  function submitError () {
+    toastr.error('!{t(locale, "contact.submit.error.content")}', '!{t(locale, "contact.submit.error.title")}')
+  }

@@ -21,12 +21,14 @@
   "homepage": "https://github.com/frame-tools/landing-page#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "@now/node": "^1.4.1",
     "moment": "^2.24.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "eleventy-plugin-sass": "^1.0.0",
     "i18next": "^19.3.2",
+    "query-string": "^6.11.1",
     "require-yml": "^1.4.0"
   }
 }

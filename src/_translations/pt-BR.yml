@@ -22,3 +22,11 @@ translation:
     action:
       more: Saiba mais
       contact: Fale conosco
+  contact:
+    submit:
+      success:
+        title: Sucesso
+        content: Obrigado! Em breve responderemos seu contato.
+        error:
+          title: Ocorreu um erro
+          content: Pedimos desculpas pelo inconveniente. Tente novamente mais tarde.

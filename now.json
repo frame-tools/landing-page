@@ -12,6 +12,12 @@
     }
   ],
   "env": {
-    "LEADCAPTURE_DISCORD_ENDPOINT": "@leadcapture_discord_endpoint"
+    "LEADCAPTURE_DISCORD_ENDPOINT": "@leadcapture_discord_endpoint",
+    "RECAPTCHA_SECRET": "@recaptcha_secret"
+  },
+  "build": {
+    "env": {
+      "RECAPTCHA_PUBLIC": "@recaptcha_public"
+    }
   }
 }

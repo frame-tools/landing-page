@@ -22,6 +22,11 @@ $(document).ready(function () {
 				success: submitSuccess,
 				error: submitError,
 				complete: function () {
+					window.dataLayer = window.dataLayer || [];
+					window.dataLayer.push({
+						'event': 'contactSent'
+					});
+
 					_this.removeClass('busy')
 				}
 			})

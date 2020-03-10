@@ -4,52 +4,14 @@ section#team.section.section--team
     .section__description.section__description--centered=t(locale, 'team.description')
     .team
       .team__content.swiper-wrapper
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-ernesto.png' alt='Ernesto Araújo')
-          .team__source
-            | Ernesto Araújo
-            span Mobile Engineer / Data Scientist
-            span Head of Product
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-lais.png' alt='Laís Amaro')
-          .team__source
-            | Laís Amaro
-            span Administrator
-            span Head of Operations
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-rodrigo.png' alt='Rodrigo Waltenberg')
-          .team__source
-            | Rodrigo Waltenberg
-            span Frontend Engineer
-            span Head of Technology
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-marcos.png' alt='Marcos Oliveira')
-          .team__source
-            | Marcos Oliveira
-            span Backend Engineer
-            span Tech Lead
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-zamp.png' alt='Fabrizzio Zampieri')
-          .team__source
-            | Fabrizzio Zampieri
-            span Designer / UX Specialist
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-marlos.png' alt='Marlos Irapuan')
-          .team__source
-            | Marlos Irapuan
-            span Fullstack Engineer
-        .team__slide.swiper-slide
-          .team__thumb(data-swiper-parallax='-50%')
-            img(src='/assets/images/avatar-tarcisio.png' alt='Tarcisio Melo')
-          .team__source
-            | Tarcisio Melo
-            span Frontend Engineer
+        each person in team
+          .team__slide.swiper-slide
+            .team__thumb(data-swiper-parallax='-50%')
+              img(src=person.image alt=person.name)
+            .team__source
+              | #{person.name}
+              each skill in person.skills
+                span #{skill}
       .team__pagination.swiper-pagination
       .team__button--next.swiper-button-next
       .team__button--prev.swiper-button-prev

@@ -3,21 +3,10 @@ section#clients.section.section--clients
     h2.section__title.section__title--centered=t(locale, 'clients.title')
     .section__description.section__description--centered
     .grid.grid--5col
-      .grid__item
-        .grid__client-logo
-            img(src='/assets/images/clients/boticario.png' alt='Grupo Boticário')
-      .grid__item
-        .grid__client-logo
-            img(src='/assets/images/clients/beautydate.png' alt='Beauty Date' title='')
-      .grid__item
-        .grid__client-logo
-            img(src='/assets/images/clients/idox.png' alt='Idox - Tecnologias Jurídicas')
-      .grid__item
-        .grid__client-logo
-            img(src='/assets/images/clients/malapronta.png' alt='Mala Pronta')
-      .grid__item
-        .grid__client-logo
-            img(src='/assets/images/clients/audiowalk.png' alt='Audiowalk Curitiba')
+      each client in clients
+        .grid__item
+          .grid__client-logo
+              img(src=client.logo alt=client.name)
   svg.svg-clients-top(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')
     path(d='M0,30 L100,0 0,0 Z' fill='#f7f8f9')
   svg.svg-cta-top(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 100 100' preserveaspectratio='none')

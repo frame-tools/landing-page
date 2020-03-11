@@ -11,23 +11,23 @@
     padding-right: 4%;
   }
 
-  .modal__wrapper {
-    top: 18%;
-    width: 70%;
-    margin-left: -35%;
-  }
+  // .modal__wrapper {
+  //   top: 18%;
+  //   width: 70%;
+  //   margin-left: -35%;
+  // }
 
-  .modal__wrapper--image {
-    top: 5%;
-    left: 20%;
-    width: 80%;
-    bottom: 5%;
-    margin-left: -10%;
-  }
+  // .modal__wrapper--image {
+  //   top: 5%;
+  //   left: 20%;
+  //   width: 80%;
+  //   bottom: 5%;
+  //   margin-left: -10%;
+  // }
 
-  .pricing {
-    width: 90%;
-  }
+  // .pricing {
+  //   width: 90%;
+  // }
 }
 
 /*===============================================*/
@@ -588,63 +588,63 @@
   /*      CTA   	 */
   /*---------------*/
 
-  .section--cta {
-    padding: 20px 0;
-  }
+  // .section--cta {
+  //   padding: 20px 0;
+  // }
 
-  svg {
-    &.svg-cta-top,
-    &.svg-cta-bottom {
-      height: 20px;
-    }
-  }
+  // svg {
+  //   &.svg-cta-top,
+  //   &.svg-cta-bottom {
+  //     height: 20px;
+  //   }
+  // }
 
   /*     Modal  	 */
   /*---------------*/
 
-  .modal__wrapper {
-    top: 5%;
-    width: 90%;
-    margin-left: -45%;
-  }
+  // .modal__wrapper {
+  //   top: 5%;
+  //   width: 90%;
+  //   margin-left: -45%;
+  // }
 
-  .modal__wrapper--image {
-    top: 10%;
-    left: 14%;
-    width: 86%;
-    bottom: auto;
-    margin-left: -7%;
-  }
+  // .modal__wrapper--image {
+  //   top: 10%;
+  //   left: 14%;
+  //   width: 86%;
+  //   bottom: auto;
+  //   margin-left: -7%;
+  // }
 
-  .modal__content.modal__content--visible {
-    display: block;
-  }
+  // .modal__content.modal__content--visible {
+  //   display: block;
+  // }
 
-  .modal__info {
-    display: none;
-  }
+  // .modal__info {
+  //   display: none;
+  // }
 
-  .modal__form {
-    width: 90%;
-    height: 100%;
-    display: block;
-    padding: 20px 5%;
-  }
+  // .modal__form {
+  //   width: 90%;
+  //   height: 100%;
+  //   display: block;
+  //   padding: 20px 5%;
+  // }
 
-  .modal__content--login,
-  .modal__content--forgot,
-  .modal__content--signup {
-    background-color: #fff;
-  }
+  // .modal__content--login,
+  // .modal__content--forgot,
+  // .modal__content--signup {
+  //   background-color: #fff;
+  // }
 
-  .modal__image {
-    height: auto;
+  // .modal__image {
+  //   height: auto;
 
-    img {
-      max-width: 100%;
-      max-height: auto;
-    }
-  }
+  //   img {
+  //     max-width: 100%;
+  //     max-height: auto;
+  //   }
+  // }
 
   .grid--features .grid__item {
     margin-right: 0px;

@@ -1,5 +1,5 @@
 # Frame Tools Landing Page
-This is a static website built with [eleventy](https://github.com/11ty/eleventy).
+This is a static website built with [eleventy](https://github.com/11ty/eleventy)
 
 ## Getting Started
 

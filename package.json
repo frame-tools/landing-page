@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/frame-tools/landing-page#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "@now/node": "^1.4.1",
     "moment": "^2.24.0"
   },
